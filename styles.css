@@ -115,7 +115,9 @@ section {
 
 .about-btn {
     text-decoration: none;
-    width: 20%;
+    width: auto;
+    min-width: 150px; 
+    text-align: center;
     padding: 12px 30px;
     font-size: 16px;
     border-radius: 5px;
@@ -129,7 +131,21 @@ section {
  .about-btn:hover {
     background-color: #6ac6e2;
     transform: scale(1.05);
- }
+
+ }.language-flags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.flag-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
 
  /* Tech Stack */
 .tech-stack {
