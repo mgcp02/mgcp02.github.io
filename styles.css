@@ -132,7 +132,8 @@ section {
     background-color: #6ac6e2;
     transform: scale(1.05);
 
- }.language-flags {
+ }
+ .language-flags {
     display: flex;
     justify-content: center;
     gap: 10px;
