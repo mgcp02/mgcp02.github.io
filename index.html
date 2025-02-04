@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Casula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech-stack">Technologies</a></li>
+                <li><a href="#projects">Recent Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="go-up-btn" onclick="scrollToTop()">↑</button>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="about-container">
+                <img src="./images/monica.jpg" alt="Profile Picture" class="profile-img">
+                <p class="picture-description">
+                    Hello, I am Monica Casula, a Software Engineering Student in Berlin, Germany.
+                </p>
+                <div class="about-buttons">
+                <a class="about-btn" href="./CV_MonicaCasula_.pdf" target="_blank"> Check out CV </a>
+                <a class="about-btn" href="#projects">See Projects ⬇️</a>
+            </div>
+            </div>
+        </div>
+    
+            <div id="tech-stack" class="tech-stack">
+                <h3>My Tech Stack</h3>
+                <div class="tech-icons">
+                    <div class="tech-item"><img src="./images/html.png" alt="HTML">HTML</div>
+                    <div class="tech-item"><img src="./images/CSS3_logo.svg.png" alt="CSS">CSS</div>
+                    <div class="tech-item"><img src="./images/JavaScript-logo.png" alt="JavaScript">JavaScript</div>
+                    <div class="tech-item"><img src="./images/Tailwind_CSS_Logo.svg.png" alt="Tailwind">Tailwind CSS</div>
+                    <div class="tech-item"><img src="./images/5968322.png" alt="Node.js">Node.js</div>
+                    <div class="tech-item"><img src="./images/mongodb-icon-1.svg" alt="MongoDB">MongoDB</div>
+                    <div class="tech-item"><img src="./images/Python-logo-notext.svg.png" alt="python">Python</div>
+                    <div class="tech-item"><img src="./images/typescript.png" alt="Typescript">Typescript</div>
+                    <div class="tech-item"><img src="./images/Angular_full_color_logo.svg.png" alt="Angular">Angular</div>
+                    <div class="tech-item"><img src="./images/sass.png" alt="SASS">SASS</div>
+                    <div class="tech-item"><img src="./images/reactjs.png" alt="React">ReactJS</div>
+                    <div class="tech-item"><img src="./images/Git-Icon-1788C.png" alt="Git">Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="projects">
+        <h2>Recent Projects</h2>
+        <div class="project">
+            <img src="./images/tinku1.png" alt="Project 1">
+            <div class="project-info">
+                <h3>Tinku:Event Hub and Planner</h3>
+                <p>Designed and coded a responsive site to plan and manage
+                    events, providing tools for organizing, task management and scheduling. Used React.js, Typescript,
+                    HTML, CSS, and MongoDB.</p>
+            </div>
+        </div>
+        </div>
+        <div class="project">
+            <img src="./images/to-do.png" alt="Project 3">
+            <div class="project-info">
+                <h3>To-Do: Task Manager</h3>
+                <p>Designed and created a website to manage daily tasks with JS/TypeScript, HTML, and
+                    CSS.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="./images/batabit1.png" alt="Project 1">
+            <div class="project-info">
+                <h3>Batabit</h3>
+                <p>Programmed a static website using HTML and CSS where crypto investor can have useful information in one place.</p>
+        </div>
+        <div class="project">
+            <img src="./images/weather.jpg" alt="Project 2">
+            <div class="project-info">
+                <h3>Weather Website</h3>
+                <p>Designed and developed a dynamic weather website using HTML, CSS, and
+                    JavaScript. Integrated Bootstrap for design and weather API for real-time data updates.</p>
+            </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out! I would love to hear from you.</p>
+        <p>Email: monicagiss02@gmail.com</p>
+        <p>Phone: +49 1523 1498856</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Monica Casula</p>
+    </footer>
+
+    <script>
+        // Button for going up
+        let goUpBtn = document.querySelector('.go-up-btn');
+    
+        // Show the button when scrolling down, hide when at the top
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                goUpBtn.classList.add('show'); // Show the button
+            } else {
+                goUpBtn.classList.remove('show'); // Hide the button
+            }
+        };
+    
+        // scroll to the top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
