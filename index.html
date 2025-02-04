@@ -89,8 +89,8 @@
             <img src="./images/scoutsweb.png" alt="Project 4">
             <div class="project-info">
                 <h3>Scouts' Organization Website</h3>
-                <p>As a personal project, I designed and developed a website for the Scouts organization, using technologies like HTML, CSS, Angular, and JavaScript to build a responsive and visually appealing interface. I implemented Tailwind CSS for efficient styling, ensuring a modern and clean design. </p>
-        </div>
+                <p>As a personal project, I designed and developed a website for the Scouts organization, using technologies like HTML, CSS, and JavaScript to build a responsive and visually appealing interface. I implemented Tailwind CSS for efficient styling, ensuring a modern and clean design. </p>
+            </div>
     </section>
     
     <section id="contact">
@@ -121,6 +121,17 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        //move smoothly when clicking on navs
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+        
     </script>
 </body>
 </html>
